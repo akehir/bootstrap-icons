@@ -1,0 +1,21 @@
+{
+  "name": "@triangular/bootstrap-icons",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "@angular/common": "^9.0.0",
+    "@angular/core": "^9.0.0"
+  },
+  "homepage": "https://bootstrap-icons.akehir.com",
+  "license" : "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akehir/bootstrap-icons"
+  },
+  "bugs": { "url" : "https://github.com/akehir/bootstrap-icons/issues"
+  , "email" : "raphael@ochsenbe.in"
+  },
+  "author": { "name" : "Raphael Ochsenbein"
+            , "email" : "raphael@ochsenbe.in"
+            , "url" : "https://akehir.com/"
+  }
+}

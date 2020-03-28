@@ -1,0 +1,39 @@
+# Documentation
+# https://docs.gitlab.com/ee/ci/yaml/
+
+stages:
+- test
+- deploy
+
+test:
+  stage: test
+  before_script:
+   - git submodule sync --recursive
+   - git submodule update --init --recursive
+   - nvm i
+   - npm i
+  script:
+   - npm run lint
+   - npm run build:lib
+   - npm run test
+   - npm run build:app
+
+  artifacts:
+    paths:
+    - dist/bootstrap-icons/
+    - dist/example-app/
+    expire_in: 1337 mins
+
+deploy_master:
+  stage: deploy
+  script:
+     - rsync --delete -rlvvzhe ssh $CI_PROJECT_DIR/dist/example-app/ akehir@192.168.7.111:/app/web/projects/bootstrap-icons/master/ # syncronize from build server to local via rsync
+     - nvm i
+     - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>~/.npmrc
+     - cd $CI_PROJECT_DIR/dist/bootstrap-icons
+     - npm publish --access public
+     - rm -f ~/.npmrc
+  after_script:
+    - rm -f ~/.npmrc
+  only:
+  - master

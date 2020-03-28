@@ -1,0 +1,74 @@
+<main>
+<h1>{{ title }}</h1>
+<section>
+  <p>
+    Use the cool icons from Bootstrap in your app, fully tree-shaked and only loaded when necessary. Injected into the dom, and therefore IE compatible.
+    Click a button above to load a module containing the icons starting with the given letter!
+  </p>
+  <app-search></app-search>
+</section>
+<nav>
+  <a routerLink="/a">Icons A</a>
+  <a routerLink="/b">Icons B</a>
+  <a routerLink="/c">Icons C</a>
+  <a routerLink="/d">Icons D</a>
+  <a routerLink="/e">Icons E</a>
+  <a routerLink="/f">Icons F</a>
+  <a routerLink="/g">Icons G</a>
+  <a routerLink="/h">Icons H</a>
+  <a routerLink="/i">Icons I</a>
+  <a routerLink="/j">Icons J</a>
+  <a routerLink="/k">Icons K</a>
+  <a routerLink="/l">Icons L</a>
+  <a routerLink="/m">Icons M</a>
+  <a routerLink="/n">Icons N</a>
+  <a routerLink="/o">Icons O</a>
+  <a routerLink="/p">Icons P</a>
+  <a routerLink="/q">Icons Q</a>
+  <a routerLink="/r">Icons R</a>
+  <a routerLink="/s">Icons S</a>
+  <a routerLink="/t">Icons T</a>
+  <a routerLink="/u">Icons U</a>
+  <a routerLink="/v">Icons V</a>
+  <a routerLink="/w">Icons W</a>
+  <a routerLink="/x">Icons X</a>
+  <a routerLink="/y">Icons Y</a>
+  <a routerLink="/z">Icons Z</a>
+</nav>
+<section>
+  <h2>Icons</h2>
+  <p class="helper" routerLinkActive="show" [routerLinkActiveOptions]="{ exact: true }" routerLink="/">
+    Click a button above to load a module containing the icons starting with the given letter!
+  </p>
+  <router-outlet></router-outlet>
+</section>
+<section>
+  <h2>Usage</h2>
+  <h3>Step 1: Install</h3>
+  <p>Install the npm package.</p>
+  <pre>npm i @triangular/bootstrap-icons</pre>
+
+  <h3>Step 2: Add to NgModule Imports</h3>
+  <p>Then, add the <strong>BootstrapIconsModule</strong> to the imports of your app, as follows:</p>
+  <pre>{{step2}}</pre>
+
+  <h3>Step 3: Register the Icons in the Registry</h3>
+  <p>The tree-shaking magic happens when you import icons from <strong>@triangular/bootstrap-icons/icons</strong> and register them in the  <strong>BootstrapIconsRegistry</strong>. By explicitly importing the icons where they are required, the tree shaking can ensure they are loaded when they are needed. If an icon is not required, it will not be bundled in your application. If an icon is required in a feature module, it will be bundled with the feature module. And if the icon is bundled in multiple feature modules, it will be bundled with the common bundle - in order to not download the same icon multiple times.</p>
+  <pre>{{step3}}</pre>
+
+  <h3>Step 4: Enjoy using the Icons with a Peace of Mind</h3>
+  <p>Once an icon has been registered, it can simply be used in your template. If you get the error <em>can't bind to 'name' since it isn't a known property of 'bootstrap-icon'</em>, you need to include the <strong>BootstrapIconsModule</strong> in your module.</p>
+  <pre>{{step4}}</pre>
+</section>
+<section>
+  <h2>Source Code</h2>
+  <p>
+    The source code is published at <a href="https://git.akehir.com/akehir/bootstrap-icons">akehir.com</a> and mirrored on <a href="https://github.com/akehir/angular-bootstrap-icons">Github</a>.
+  </p>
+  <p>The package ist published to npm at <a href="https://www.npmjs.com/package/@triangular/bootstrap-icons">@triangular/bootstrap-icons</a>.</p>
+</section>
+<section>
+  <h2>License</h2>
+  <p>This project is licensed under the MIT License</p>
+</section>
+</main>

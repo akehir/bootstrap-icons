@@ -1,0 +1,6 @@
+<ng-container *ngFor="let icon of icons">
+  <div class="icon__container" [id]="icon.name">
+    <bootstrap-icon [name]="icon.name"></bootstrap-icon>
+    <pre class="icon__title">{{ icon.name }}</pre>
+  </div>
+</ng-container>

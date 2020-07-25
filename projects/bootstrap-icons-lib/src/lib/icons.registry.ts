@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BootstrapIcon } from './icons';
+import { BootstrapIcon } from '../icons';
 
 @Injectable({
   providedIn: 'root'

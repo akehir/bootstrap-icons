@@ -17,5 +17,8 @@
   "author": { "name" : "Raphael Ochsenbein"
             , "email" : "raphael@ochsenbe.in"
             , "url" : "https://akehir.com/"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
   }
 }

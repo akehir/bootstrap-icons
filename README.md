@@ -12,7 +12,8 @@ If you just want to use the library, follow the following 4 simple steps. For co
 Supported Angular Versions
 | Angular Version | Password Checker Version |
 | --------------- | ------------------------ |
-| 9.x             | 1.0.0                    |
+|  9.x            | 1.0.0                    |
+| 10.x            | 2.0.0                    |
 
 ### Step 1: Install
 

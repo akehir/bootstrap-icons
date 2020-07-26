@@ -10,7 +10,7 @@ The live demo can be found at https://bootstrap-icons.akehir.com.
 If you just want to use the library, follow the following 4 simple steps. For contributing, or building the library locally, see the section on [building](#building) the library.
 
 Supported Angular Versions
-| Angular Version | Password Checker Version |
+| Angular Version | Library Version          |
 | --------------- | ------------------------ |
 |  9.x            | 1.0.0                    |
 | 10.x            | 2.0.0                    |

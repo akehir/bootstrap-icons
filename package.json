@@ -22,7 +22,52 @@
   },
   "private": true,
   "svg-to-ts": {
-    "conversionType": "constants",
+    "svg-to-ts": {
+      "conversionType": "files",
+      "modelFileName": "bootstrap-icon.model",
+      "svgoConfig": {
+        "plugins": [
+          { "cleanupAttrs": true },
+          { "removeComments": true },
+          { "removeMetadata": true },
+          { "removeTitle": true },
+          { "removeDesc": true },
+          { "removeUselessDefs": true },
+          { "removeEditorsNSData": true },
+          { "removeEmptyAttrs": true },
+          { "removeEmptyText": true },
+          { "removeEmptyContainers": true },
+          { "removeEmptyContainers": true },
+          { "removeViewBox": false },
+          { "convertStyleToAttrs": true },
+          { "convertColors": true },
+          { "convertTransform": true },
+          { "removeUnknownsAndDefaults": true },
+          { "removeNonInheritableGroupAttrs": true },
+          { "removeUselessStrokeAndFill": true },
+          { "removeUnusedNS": true },
+          { "cleanupIDs": true },
+          { "cleanupNumericValues": true },
+          { "moveElemsAttrsToGroup": true },
+          { "moveGroupAttrsToElems": true },
+          { "collapseGroups": true },
+          { "mergePaths": true },
+          { "convertShapeToPath": true },
+          { "sortAttrs": true },
+          { "removeDimensions": true },
+          { "removeAttrs": {"attrs": "(stroke|fill)"} }
+        ]
+      },
+      "srcFiles": [
+        "./lib/rpg-awesome-raw/Font/**/*.svg"
+      ],
+      "outputDirectory": "./projects/rpg-awesome-icons-lib/src/icons",
+      "interfaceName": "RpgAwesomeIcon",
+      "typeName": "rpgAwesomeIcon",
+      "prefix": "rpgAwesomeIcon",
+      "optimizeForLazyLoading": true,
+      "compileSources": true
+    },
     "srcFiles": [
       "./lib/bootstrap/icons/**/*.svg"
     ],

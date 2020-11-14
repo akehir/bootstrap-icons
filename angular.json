@@ -10,7 +10,7 @@
       "prefix": "bootstrap",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/bootstrap-icons-lib/tsconfig.lib.json",
             "project": "projects/bootstrap-icons-lib/ng-package.json"
@@ -72,7 +72,6 @@
             "es5": {
               "tsConfig": "./projects/example-app/tsconfig-es5.app.json",
               "sourceMap": true,
-              "extractCss": false,
               "namedChunks": true,
               "aot": true,
               "extractLicenses": true,
@@ -97,7 +96,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,

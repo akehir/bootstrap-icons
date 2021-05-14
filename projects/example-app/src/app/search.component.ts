@@ -574,9 +574,7 @@ export class SearchComponent implements OnInit {
     this.term.valueChanges.pipe(
       throttleTime(64),
       filter((term) => term && term.length > 0),
-      map((term) => {
-        return this.icons.filter((element) => element.indexOf(term) !== -1);
-      }),
+      map((term) => this.icons.filter((element) => element.indexOf(term) !== -1)),
     ).subscribe((results) => {
       this.results = results;
       }

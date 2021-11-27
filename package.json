@@ -24,99 +24,6 @@
   "svg-to-ts": {
     "conversionType": "files",
     "modelFileName": "bootstrap-icon.model",
-    "svgoConfig": {
-      "plugins": [
-        {
-          "cleanupAttrs": true
-        },
-        {
-          "removeComments": true
-        },
-        {
-          "removeMetadata": true
-        },
-        {
-          "removeTitle": true
-        },
-        {
-          "removeDesc": true
-        },
-        {
-          "removeUselessDefs": true
-        },
-        {
-          "removeEditorsNSData": true
-        },
-        {
-          "removeEmptyAttrs": true
-        },
-        {
-          "removeEmptyText": true
-        },
-        {
-          "removeEmptyContainers": true
-        },
-        {
-          "removeEmptyContainers": true
-        },
-        {
-          "removeViewBox": false
-        },
-        {
-          "convertStyleToAttrs": true
-        },
-        {
-          "convertColors": true
-        },
-        {
-          "convertTransform": true
-        },
-        {
-          "removeUnknownsAndDefaults": true
-        },
-        {
-          "removeNonInheritableGroupAttrs": true
-        },
-        {
-          "removeUselessStrokeAndFill": true
-        },
-        {
-          "removeUnusedNS": true
-        },
-        {
-          "cleanupIDs": true
-        },
-        {
-          "cleanupNumericValues": true
-        },
-        {
-          "moveElemsAttrsToGroup": true
-        },
-        {
-          "moveGroupAttrsToElems": true
-        },
-        {
-          "collapseGroups": true
-        },
-        {
-          "mergePaths": true
-        },
-        {
-          "convertShapeToPath": true
-        },
-        {
-          "sortAttrs": true
-        },
-        {
-          "removeDimensions": true
-        },
-        {
-          "removeAttrs": {
-            "attrs": "(stroke|fill)"
-          }
-        }
-      ]
-    },
     "srcFiles": [
       "./lib/bootstrap/icons/**/*.svg"
     ],
@@ -138,7 +45,7 @@
     "@angular/router": "~13.0.2",
     "core-js": "^3.1.3",
     "rxjs": "~7.4.0",
-    "svg-to-ts": "^5.0.1",
+    "svg-to-ts": "^7.1.0",
     "tslib": "^2.3.1",
     "zone.js": "~0.11.4"
   },

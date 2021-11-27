@@ -19,6 +19,12 @@ import { DOCUMENT } from '@angular/common';
 export class BootstrapIconComponent {
   private svgIcon: SVGElement;
 
+  constructor(
+    private element: ElementRef,
+    private iconsRegistry: BootstrapIconsRegistry,
+    @Optional() @Inject(DOCUMENT) private document: any,
+  ) {}
+
   @Input()
   set name(iconName: string) {
     if (this.svgIcon) {
@@ -30,13 +36,6 @@ export class BootstrapIconComponent {
       this.svgIcon = this.svgElementFromString(svgData);
       this.element.nativeElement.appendChild(this.svgIcon);
     }
-  }
-
-  constructor(
-    private element: ElementRef,
-    private iconsRegistry: BootstrapIconsRegistry,
-    @Optional() @Inject(DOCUMENT) private document: any,
-  ) {
   }
 
   private svgElementFromString(svgContent: string): SVGElement {

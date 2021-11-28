@@ -1,0 +1,13 @@
+{
+    "conversionType": "files",
+    "modelFileName": "bootstrap-icon.model",
+    "srcFiles": [
+      "./lib/bootstrap/icons/**/*.svg"
+    ],
+    "outputDirectory": "./projects/bootstrap-icons-lib/src/icons",
+    "interfaceName": "BootstrapIcon",
+    "typeName": "bootstrapIcon",
+    "prefix": "bootstrapIcon",
+    "optimizeForLazyLoading": true,
+    "compileSources": true
+}

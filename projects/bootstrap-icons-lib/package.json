@@ -1,6 +1,6 @@
 {
   "name": "@triangular/bootstrap-icons",
-  "version": "5.0.2",
+  "version": "5.0.3",
   "peerDependencies": {
     "@angular/common": "^13.0.0",
     "@angular/core": "^13.0.0"
@@ -20,5 +20,15 @@
   },
   "dependencies": {
     "tslib": "^2.0.0"
+  },
+  "exports": {
+    "./icons": {
+      "types": "./index.d.ts",
+      "esm2020": "./icons/index.js",
+      "es2020": "./icons/index.js",
+      "es2015": "./icons/index.js",
+      "node": "./icons/index.js",
+      "default": "./icons/index.js"
+    }
   }
 }

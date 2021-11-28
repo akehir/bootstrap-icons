@@ -21,19 +21,6 @@
     "postversion": "git push --follow-tags"
   },
   "private": true,
-  "svg-to-ts": {
-    "conversionType": "files",
-    "modelFileName": "bootstrap-icon.model",
-    "srcFiles": [
-      "./lib/bootstrap/icons/**/*.svg"
-    ],
-    "outputDirectory": "./projects/bootstrap-icons-lib/src/icons",
-    "interfaceName": "BootstrapIcon",
-    "typeName": "bootstrapIcon",
-    "prefix": "bootstrapIcon",
-    "optimizeForLazyLoading": true,
-    "compileSources": true
-  },
   "dependencies": {
     "@angular/animations": "~13.0.2",
     "@angular/common": "~13.0.2",

@@ -4,8 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "start:app": "ng serve --project example-app --host 0.0.0.0 --aot",
-    "start:app:ie": "ng serve --project example-app --host 0.0.0.0 --aot --configuration es5",
+    "start:app": "ng serve --project example-app --host 0.0.0.0",
     "build": "npm run build:lib && npm run build:app",
     "build:app": "npm run ng build example-app",
     "build:lib": "npm run build:lib:pre && npm run ng build bootstrap-icons-lib && npm run build:lib:post",

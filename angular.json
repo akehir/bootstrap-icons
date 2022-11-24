@@ -71,17 +71,6 @@
             "namedChunks": true
           },
           "configurations": {
-            "es5": {
-              "tsConfig": "./projects/example-app/tsconfig-es5.app.json",
-              "extractLicenses": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                }
-              ]
-            },
             "production": {
               "tsConfig": "projects/example-app/tsconfig.app.prod.json",
               "fileReplacements": [
@@ -119,9 +108,6 @@
           "configurations": {
             "production": {
               "browserTarget": "example-app:build:production"
-            },
-            "es5": {
-              "browserTarget": "example-app:build:es5"
             }
           }
         },

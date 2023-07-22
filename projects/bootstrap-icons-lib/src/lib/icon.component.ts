@@ -14,7 +14,8 @@ import { DOCUMENT } from '@angular/common';
   selector: 'bootstrap-icon',
   template: `<ng-content></ng-content>`,
   encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true
 })
 export class BootstrapIconComponent {
   private svgIcon: SVGElement;
@@ -22,7 +23,7 @@ export class BootstrapIconComponent {
   constructor(
     private element: ElementRef,
     private iconsRegistry: BootstrapIconsRegistry,
-    @Optional() @Inject(DOCUMENT) private document: any,
+    @Optional() @Inject(DOCUMENT) private document: Document,
   ) {}
 
   @Input()

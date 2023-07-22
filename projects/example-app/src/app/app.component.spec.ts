@@ -1,4 +1,4 @@
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed, waitForAsync } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -6,7 +6,7 @@ import { BootstrapIconsModule } from '@triangular/bootstrap-icons';
 import { RouterTestingModule } from '@angular/router/testing';
 
 describe('AppComponent', () => {
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,

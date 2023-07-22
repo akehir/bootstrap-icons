@@ -1,0 +1,21 @@
+<main>
+  <h1>{{ title }}</h1>
+  <section>
+    <p>
+      Use the cool emoji from the Noto font in your angular app, fully tree-shaked and only loaded when necessary. Injected into the dom, and therefore IE compatible.
+      Click a button above to load a module containing the 116 emoji from the Noto font.
+      Now also as standalone component / library.
+    </p>
+  </section>
+  <nav>
+    <a routerLink="/a">Icons A</a>
+    <a routerLink="/b">Icons B</a>
+  </nav>
+  <section>
+    <h2>Icons</h2>
+    <p class="helper" routerLinkActive="show" [routerLinkActiveOptions]="{ exact: true }" routerLink="/">
+      Click a button above to load a module containing the the icons starting with the given letter!
+    </p>
+    <router-outlet></router-outlet>
+  </section>
+</main>

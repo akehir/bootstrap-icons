@@ -19,6 +19,7 @@ Supported Angular Versions
 | 13.x            | 5.0.3                    |
 | 14.x            | 6.0.0                    |
 | 15.x            | 7.0.0                    |
+| 16.x            | 8.0.0                    |
 
 ### Step 1: Install
 
@@ -51,6 +52,7 @@ export class AppModule { }
 ### Step 3: Register the Icons in the Registry
 The tree-shaking magic happens when you import icons from   __@triangular/bootstrap-icons/icons__ and register them in the  __BootstrapIconsRegistry__. By explicitly importing the icons where they are required, the tree shaking can ensure they are loaded when they are needed. If an icon is not required, it will not be bundled in your application. If an icon is required in a feature module, it will be bundled with the feature module. And if the icon is bundled in multiple feature modules, it will be bundled with the common bundle - in order to not download the same icon multiple times.
 
+#### Step 3a: Angular App with Modules
 ```typescript
 import { Component } from '@angular/core';
 import { BootstrapIconsRegistry } from '@triangular/bootstrap-icons';
@@ -63,6 +65,35 @@ import {
   selector: 'app-some-component-with-icons',
   template: '<bootstrap-icon name="alarm"></bootstrap-icon>',
   styles: 'svg { color: #ccc; fill: currentColor; width: 5rem; height: 5rem; }',
+})
+export class SomeComponentWithIcons {
+
+  constructor(private registry: BootstrapIconsRegistry) {
+    registry.registerIcons([
+      bootstrapIconAlarm,
+      // add more icons here
+    ]);
+  }
+}
+```
+
+#### Step 3b: Standalone Angular App
+```typescript
+import { Component } from '@angular/core';
+import { BootstrapIconComponent, BootstrapIconsRegistry } from '@triangular/bootstrap-icons';
+import {
+  bootstrapIconAlarm,
+  // add more icons here
+} from '@triangular/bootstrap-icons/icons';
+
+@Component({
+  selector: 'app-some-component-with-icons',
+  template: '<bootstrap-icon name="alarm"></bootstrap-icon>',
+  styles: 'svg { color: #ccc; fill: currentColor; width: 5rem; height: 5rem; }',
+  standalone: true,
+  imports: [
+    BootstrapIconComponent,
+  ]
 })
 export class SomeComponentWithIcons {
 

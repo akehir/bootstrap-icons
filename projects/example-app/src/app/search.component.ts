@@ -567,9 +567,6 @@ export class SearchComponent implements OnInit {
     'x',
 ];
 
-  constructor() {
-  }
-
   ngOnInit(): void {
     this.term.valueChanges.pipe(
       throttleTime(64),

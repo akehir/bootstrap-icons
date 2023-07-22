@@ -22,7 +22,7 @@ module.exports = {
     'removeNonInheritableGroupAttrs',
     'removeUselessStrokeAndFill',
     'removeUnusedNS',
-    'cleanupIDs',
+    'cleanupIds',
     'cleanupNumericValues',
     'moveElemsAttrsToGroup',
     'moveGroupAttrsToElems',

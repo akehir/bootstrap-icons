@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { usage, component, ngModule } from './code';
+import {usage, component, ngModule, standaloneComponent} from './code';
 
 
 @Component({
@@ -11,8 +11,7 @@ import { usage, component, ngModule } from './code';
 export class AppComponent {
   title = 'Angular Bootstrap Lazy Loaded Icon Lib';
   step2 = ngModule;
-  step3 = component;
+  step3a = component;
+  step3b = standaloneComponent;
   step4 = usage;
-
-  constructor() {}
 }

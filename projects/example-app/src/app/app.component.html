@@ -54,7 +54,11 @@
 
   <h3>Step 3: Register the Icons in the Registry</h3>
   <p>The tree-shaking magic happens when you import icons from <strong>@triangular/bootstrap-icons/icons</strong> and register them in the  <strong>BootstrapIconsRegistry</strong>. By explicitly importing the icons where they are required, the tree shaking can ensure they are loaded when they are needed. If an icon is not required, it will not be bundled in your application. If an icon is required in a feature module, it will be bundled with the feature module. And if the icon is bundled in multiple feature modules, it will be bundled with the common bundle - in order to not download the same icon multiple times.</p>
-  <pre>{{step3}}</pre>
+  <h4>Step 3a: Angular App with Modules</h4>
+  <pre>{{step3a}}</pre>
+  <h4>Step 3b: Standalone Angular App</h4>
+  <pre>{{step3b}}</pre>
+
 
   <h3>Step 4: Enjoy using the Icons with a Peace of Mind</h3>
   <p>Once an icon has been registered, it can simply be used in your template. If you get the error <em>can't bind to 'name' since it isn't a known property of 'bootstrap-icon'</em>, you need to include the <strong>BootstrapIconsModule</strong> in your module.</p>

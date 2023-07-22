@@ -35,4 +35,30 @@ export class SomeComponentWithIcons {
   }
 }`;
 
+export const standaloneComponent = `import { Component } from '@angular/core';
+import { BootstrapIconComponent, BootstrapIconsRegistry } from '@triangular/bootstrap-icons';
+import {
+  bootstrapIconAlarm,
+  // add more icons here
+} from '@triangular/bootstrap-icons/icons';
+
+@Component({
+  selector: 'app-some-component-with-icons',
+  template: '<bootstrap-icon name="alarm"></bootstrap-icon>',
+  styles: 'svg { color: #ccc; fill: currentColor; width: 5rem; height: 5rem; }',
+  standalone: true,
+  imports: [
+    BootstrapIconComponent,
+  ]
+})
+export class SomeComponentWithIcons {
+
+  constructor(private registry: BootstrapIconsRegistry) {
+    registry.registerIcons([
+      bootstrapIconAlarm,
+      // add more icons here
+    ]);
+  }
+}`;
+
 export const usage = `<bootstrap-icon name="alarm"></bootstrap-icon>`;

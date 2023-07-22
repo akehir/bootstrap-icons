@@ -3,8 +3,8 @@ import { BootstrapIconComponent } from './icon.component';
 import { BootstrapIconsRegistry } from './icons.registry';
 
 @NgModule({
-  declarations: [BootstrapIconComponent],
-  imports: [],
+  declarations: [],
+  imports: [BootstrapIconComponent],
   exports: [BootstrapIconComponent]
 })
 export class BootstrapIconsModule {

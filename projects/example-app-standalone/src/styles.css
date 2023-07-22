@@ -1,0 +1,107 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #1d1d1d;
+  color: #ccc;
+}
+
+svg {
+  fill: currentColor;
+  width: 5rem;
+  height: 5rem;
+}
+
+.search__query {
+  text-align: center;
+}
+
+.search__label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+.search__field {
+  margin: 1rem;
+  padding: 1rem;
+  background: #1d1d1d;
+  color: #ccc;
+  border: 1px solid #ccc;
+}
+
+.search__field:active,
+.search__field:focus {
+  outline: #ccc auto 5px;
+}
+
+.icon__title {
+  text-align: center;
+  color: #ccc;
+}
+
+.icon__container {
+  position: relative;
+  margin: 1rem 1rem;
+  display: inline-block;
+
+}
+
+.icon__container bootstrap-icon {
+  margin-left: 50%;
+  display: block;
+  min-width: 5rem;
+  transform: translate(-50%, 0);
+}
+
+.icon__container svg {
+  border-radius: 50%;
+  transition: border 0.6s ease-in, color 0.6s ease-in, background 0.6s ease-in;
+  color: #ccc;
+  background: #1d1d1d;
+}
+
+.icon__container:hover svg,
+.icon__container:focus svg,
+.icon__container:active svg {
+  color: #1d1d1d;
+  background: #ccc;
+}
+
+a[routerLink],
+a[routerLink]:link,
+a[routerLink]:visited,
+a[ng-reflect-router-link],
+a[ng-reflect-router-link]:link,
+a[ng-reflect-router-link]:visited {
+  color: #ccc;
+}
+
+a[routerLink],
+a[ng-reflect-router-link] {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9em;
+  margin: 0.3rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  transition: border 0.6s ease-in, color 0.6s ease-in, background 0.6s ease-in;
+}
+
+a[routerLink]:hover,
+a[routerLink]:focus,
+a[routerLink]:active,
+a[ng-reflect-router-link]:hover,
+a[ng-reflect-router-link]:focus,
+a[ng-reflect-router-link]:active {
+  border: 1px solid #1d1d1d;
+  color: #1d1d1d;
+  background: #ccc;
+}
+

@@ -8,6 +8,7 @@
     "start:standalone": "ng serve --project example-app-standalone --host 0.0.0.0",
     "build": "npm run build:lib && npm run build:app && npm run build:standalone",
     "build:app": "npm run ng build example-app",
+    "build:standalone": "npm run ng build example-app-standalone",
     "build:lib": "npm run build:lib:pre && npm run ng build bootstrap-icons-lib && npm run build:lib:post",
     "build:lib:pre": "npm run icons",
     "build:lib:post": "cpx 'projects/bootstrap-icons-lib/src/icons/**/*.{d.ts,js,mjs}' dist/bootstrap-icons/icons",

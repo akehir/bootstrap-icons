@@ -33,8 +33,7 @@ build:
     - npm run build
   artifacts:
     paths:
-      - dist/rpg-awesome-icons/
-      - dist/example-app/
+      - dist/
     expire_in: 1337 mins
 
 deploy:
@@ -68,7 +67,7 @@ publish:
       when: on_success
   script:
     - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>~/.npmrc
-    - cd $CI_PROJECT_DIR/dist/rpg-awesome-icons
+    - cd $CI_PROJECT_DIR/dist/bootstrap-icons
     - npm publish --access public
   after_script:
     - rm -f ~/.npmrc

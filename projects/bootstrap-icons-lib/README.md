@@ -12,17 +12,16 @@ If you just want to use the library, follow the following 4 simple steps. For co
 Supported Angular Versions
 | Angular Version | Library Version          |
 | --------------- | ------------------------ |
-|  9.x            | 1.0.0                    |
-| 10.x            | 2.0.0                    |
-| 11.x            | 3.0.0                    |
-| 12.x            | 4.0.0                    |
-| 13.x            | 5.0.3                    |
-| 14.x            | 6.0.0                    |
-| 15.x            | 7.0.0                    |
-| 16.x            | 8.0.0                    |
-| 17.x            | 9.0.0                    |
-| 18.x            | 10.0.0                   |
-
+|  9.x            |  1.0.1                   |
+| 10.x            |  2.0.0                   |
+| 11.x            |  3.0.0                   |
+| 12.x            |  4.0.0                   |
+| 13.x            |  5.0.3                   |
+| 14.x            |  6.0.0                   |
+| 15.x            |  7.0.0                   |
+| 16.x            |  8.0.0                   |
+| 17.x            |  9.0.0                   |
+| 18.x            | 10.0.1                   |
 ### Step 1: Install
 
 Install the npm package.

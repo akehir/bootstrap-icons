@@ -54,11 +54,13 @@ import {
   bootstrapIconFunnel,
 } from '@triangular/bootstrap-icons/icons';
 
+// eslint-disable-next-line @angular-eslint/prefer-standalone
 @Component({
   selector: 'app-icons-f',
   templateUrl: './icons-f.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
+  standalone: false
 })
 export class IconsFComponent {
   icons = [

@@ -2,28 +2,30 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { UntypedFormControl } from '@angular/forms';
 import { filter, map, throttleTime } from 'rxjs/operators';
 
+// eslint-disable-next-line @angular-eslint/prefer-standalone
 @Component({
   selector: 'app-search',
   template: `
-    <div class="search">
-      <div class="search__query">
-        <label class="search__label" for="search">Search</label>
-        <input class="search__field"
-               type="text"
-               id="search"
-               [formControl]="term"
-               placeholder="Search"
-               autocomplete="off">
-      </div>
-      <div class="search__answer">
-        <ng-container *ngFor="let result of results">
-          <a [routerLink]="result.slice(0,1)" [fragment]="result" (click)="clear()">{{result}}</a>
-        </ng-container>
-      </div>
+  <div class="search">
+    <div class="search__query">
+      <label class="search__label" for="search">Search</label>
+      <input class="search__field"
+             type="text"
+             id="search"
+             [formControl]="term"
+             placeholder="Search"
+             autocomplete="off">
     </div>
-  `,
+    <div class="search__answer">
+      <ng-container *ngFor="let result of results">
+        <a [routerLink]="result.slice(0,1)" [fragment]="result" (click)="clear()">{{result}}</a>
+      </ng-container>
+    </div>
+  </div>
+`,
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
+  standalone: false
 })
 export class SearchComponent implements OnInit {
   term = new UntypedFormControl('');

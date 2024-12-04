@@ -68,15 +68,14 @@ import {
 import {NgForOf} from "@angular/common";
 
 @Component({
-  selector: 'app-icons-b',
-  templateUrl: './icons-b.component.html',
-  styleUrls: [],
-  encapsulation: ViewEncapsulation.None,
-  imports: [
-    BootstrapIconComponent,
-    NgForOf
-  ],
-  standalone: true
+    selector: 'app-icons-b',
+    templateUrl: './icons-b.component.html',
+    styleUrls: [],
+    encapsulation: ViewEncapsulation.None,
+    imports: [
+        BootstrapIconComponent,
+        NgForOf
+    ]
 })
 export class IconsBComponent {
   icons = [

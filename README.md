@@ -22,6 +22,7 @@ Supported Angular Versions
 | 16.x            |  8.0.0                   |
 | 17.x            |  9.0.0                   |
 | 18.x            | 10.0.1  - 10.2.0         |
+| 19.x            | 11.0.0                   |
 
 ### Step 1: Install
 

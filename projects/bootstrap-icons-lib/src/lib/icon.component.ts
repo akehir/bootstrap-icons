@@ -6,9 +6,10 @@ import {
   Input,
   Optional,
   ViewEncapsulation,
+  DOCUMENT
 } from '@angular/core';
 import { BootstrapIconsRegistry } from './icons.registry';
-import { DOCUMENT } from '@angular/common';
+
 
 @Component({
   selector: 'bootstrap-icon',

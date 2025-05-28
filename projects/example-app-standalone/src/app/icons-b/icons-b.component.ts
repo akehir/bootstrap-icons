@@ -65,7 +65,7 @@ import {
   bootstrapIconBuilding,
   bootstrapIconBullseye,
 } from '@triangular/bootstrap-icons/icons';
-import {NgForOf} from "@angular/common";
+
 
 @Component({
     selector: 'app-icons-b',
@@ -73,9 +73,8 @@ import {NgForOf} from "@angular/common";
     styleUrls: [],
     encapsulation: ViewEncapsulation.None,
     imports: [
-        BootstrapIconComponent,
-        NgForOf
-    ]
+    BootstrapIconComponent
+]
 })
 export class IconsBComponent {
   icons = [

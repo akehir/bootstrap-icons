@@ -47,7 +47,7 @@ import {
   bootstrapIconAwardFill,
   bootstrapIconAward,
 } from '@triangular/bootstrap-icons/icons';
-import {NgForOf} from "@angular/common";
+
 
 @Component({
     selector: 'app-icons-a',
@@ -55,9 +55,8 @@ import {NgForOf} from "@angular/common";
     styleUrls: [],
     encapsulation: ViewEncapsulation.None,
     imports: [
-        BootstrapIconComponent,
-        NgForOf
-    ]
+    BootstrapIconComponent
+]
 })
 export class IconsAComponent {
   icons = [

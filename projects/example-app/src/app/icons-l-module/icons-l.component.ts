@@ -32,13 +32,12 @@ import {
   bootstrapIconLock,
 } from '@triangular/bootstrap-icons/icons';
 
-// eslint-disable-next-line @angular-eslint/prefer-standalone
 @Component({
   selector: 'app-icons-l',
   templateUrl: './icons-l.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
-  standalone: false
+  standalone: false // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class IconsLComponent {
   icons = [

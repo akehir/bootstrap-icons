@@ -66,13 +66,12 @@ import {
   bootstrapIconBullseye,
 } from '@triangular/bootstrap-icons/icons';
 
-// eslint-disable-next-line @angular-eslint/prefer-standalone
 @Component({
   selector: 'app-icons-b',
   templateUrl: './icons-b.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
-  standalone: false
+  standalone: false // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class IconsBComponent {
   icons = [

@@ -13,13 +13,12 @@ import {
   bootstrapIconX,
 } from '@triangular/bootstrap-icons/icons';
 
-// eslint-disable-next-line @angular-eslint/prefer-standalone
 @Component({
   selector: 'app-icons-x',
   templateUrl: './icons-x.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
-  standalone: false
+  standalone: false // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class IconsXComponent {
   icons = [

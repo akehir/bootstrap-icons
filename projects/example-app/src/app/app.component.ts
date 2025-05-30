@@ -1,13 +1,12 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import {usage, component, ngModule, standaloneComponent} from './code';
 
-// eslint-disable-next-line @angular-eslint/prefer-standalone
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   encapsulation: ViewEncapsulation.Emulated,
-  standalone: false
+  standalone: false // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class AppComponent {
   title = 'Angular Bootstrap Lazy Loaded Icon Lib';

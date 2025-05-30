@@ -15,13 +15,12 @@ import {
   bootstrapIconMusicPlayer,
 } from '@triangular/bootstrap-icons/icons';
 
-// eslint-disable-next-line @angular-eslint/prefer-standalone
 @Component({
   selector: 'app-icons-m',
   templateUrl: './icons-m.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
-  standalone: false
+  standalone: false // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class IconsMComponent {
   icons = [

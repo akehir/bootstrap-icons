@@ -29,13 +29,12 @@ import {
   bootstrapIconEye,
 } from '@triangular/bootstrap-icons/icons';
 
-// eslint-disable-next-line @angular-eslint/prefer-standalone
 @Component({
   selector: 'app-icons-e',
   templateUrl: './icons-e.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
-  standalone: false
+  standalone: false // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class IconsEComponent {
   icons = [

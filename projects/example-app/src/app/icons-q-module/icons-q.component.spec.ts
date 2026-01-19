@@ -1,4 +1,4 @@
-import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { IconsQComponent } from './icons-q.component';
 import { BootstrapIconsModule } from '@triangular/bootstrap-icons';
@@ -7,15 +7,15 @@ describe('IconsQComponent', () => {
   let component: IconsQComponent;
   let fixture: ComponentFixture<IconsQComponent>;
 
-  beforeEach(waitForAsync(() => {
+  beforeEach(() =>
     TestBed.configureTestingModule({
       declarations: [ IconsQComponent ],
       imports: [
         BootstrapIconsModule,
       ]
     })
-    .compileComponents();
-  }));
+    .compileComponents()
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(IconsQComponent);

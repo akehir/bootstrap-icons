@@ -1,13 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  ElementRef,
-  Inject,
-  Input,
-  Optional,
-  ViewEncapsulation,
-  DOCUMENT
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, Input, ViewEncapsulation, DOCUMENT, inject } from '@angular/core';
 import { BootstrapIconsRegistry } from './icons.registry';
 
 
@@ -19,13 +10,11 @@ import { BootstrapIconsRegistry } from './icons.registry';
   standalone: true
 })
 export class BootstrapIconComponent {
-  private svgIcon: SVGElement;
+  private element = inject(ElementRef);
+  private iconsRegistry = inject(BootstrapIconsRegistry);
+  private document = inject<Document>(DOCUMENT, { optional: true });
 
-  constructor(
-    private element: ElementRef,
-    private iconsRegistry: BootstrapIconsRegistry,
-    @Optional() @Inject(DOCUMENT) private document: Document,
-  ) {}
+  private svgIcon: SVGElement;
 
   @Input()
   set name(iconName: string) {

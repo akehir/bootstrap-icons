@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, inject } from '@angular/core';
 import {BootstrapIconComponent, BootstrapIconsRegistry,} from '@triangular/bootstrap-icons';
 
 import {
@@ -59,6 +59,8 @@ import {
 ]
 })
 export class IconsAComponent {
+  private registry = inject(BootstrapIconsRegistry);
+
   icons = [
     bootstrapIconAlarmFill,
     bootstrapIconAlarm,
@@ -106,7 +108,9 @@ export class IconsAComponent {
     bootstrapIconAward,
   ];
 
-  constructor(private registry: BootstrapIconsRegistry) {
+  constructor() {
+    const registry = this.registry;
+
     registry.registerIcons(this.icons);
   }
 

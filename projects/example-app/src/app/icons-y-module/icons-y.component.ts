@@ -1,9 +1,7 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, inject } from '@angular/core';
 import { BootstrapIconsRegistry, } from '@triangular/bootstrap-icons';
 
-import {
 
-} from '@triangular/bootstrap-icons/icons';
 
 @Component({
   selector: 'app-icons-y',
@@ -13,10 +11,14 @@ import {
   standalone: false // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class IconsYComponent {
+  private registry = inject(BootstrapIconsRegistry);
+
   icons = [
   ];
 
-  constructor(private registry: BootstrapIconsRegistry) {
+  constructor() {
+    const registry = this.registry;
+
     registry.registerIcons(this.icons);
   }
 

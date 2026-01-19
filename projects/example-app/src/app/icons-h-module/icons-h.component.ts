@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, inject } from '@angular/core';
 import { BootstrapIconsRegistry, } from '@triangular/bootstrap-icons';
 
 import {
@@ -22,6 +22,8 @@ import {
   standalone: false // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class IconsHComponent {
+  private registry = inject(BootstrapIconsRegistry);
+
   icons = [
     bootstrapIconHammer,
     bootstrapIconHash,
@@ -35,7 +37,9 @@ export class IconsHComponent {
     bootstrapIconHr,
   ];
 
-  constructor(private registry: BootstrapIconsRegistry) {
+  constructor() {
+    const registry = this.registry;
+
     registry.registerIcons(this.icons);
   }
 

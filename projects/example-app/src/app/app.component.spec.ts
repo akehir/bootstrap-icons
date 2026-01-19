@@ -1,4 +1,4 @@
-import { TestBed, waitForAsync } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -6,7 +6,7 @@ import { BootstrapIconsModule } from '@triangular/bootstrap-icons';
 import { RouterTestingModule } from '@angular/router/testing';
 
 describe('AppComponent', () => {
-  beforeEach(waitForAsync(() => {
+  beforeEach(() =>
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
@@ -18,8 +18,8 @@ describe('AppComponent', () => {
         RouterTestingModule,
         BootstrapIconsModule,
       ],
-    }).compileComponents();
-  }));
+    }).compileComponents()
+  );
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);

@@ -4,6 +4,7 @@ import {
   inject,
 } from "@angular/core";
 import { BootstrapIconsRegistry } from "@triangular/bootstrap-icons";
+import { BootstrapIcon } from "@triangular/bootstrap-icons/icons";
 
 @Component({
   selector: "app-icons-y",
@@ -15,7 +16,7 @@ import { BootstrapIconsRegistry } from "@triangular/bootstrap-icons";
 export class IconsYComponent {
   private registry = inject(BootstrapIconsRegistry);
 
-  icons = [];
+  icons: BootstrapIcon[] = [];
 
   constructor() {
     const registry = this.registry;

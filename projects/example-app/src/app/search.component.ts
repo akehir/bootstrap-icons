@@ -39,7 +39,7 @@ import { filter, map, throttleTime } from "rxjs/operators";
 })
 export class SearchComponent implements OnInit {
   term = new UntypedFormControl("");
-  results = [];
+  results: string[] = [];
   icons = [
     "alarm_fill",
     "alarm",

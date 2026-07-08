@@ -2,7 +2,6 @@ import {
   Component,
   OnInit,
   ViewEncapsulation,
-  ChangeDetectionStrategy,
 } from "@angular/core";
 import { UntypedFormControl } from "@angular/forms";
 import { filter, map, throttleTime } from "rxjs/operators";
@@ -36,7 +35,6 @@ import { filter, map, throttleTime } from "rxjs/operators";
   `,
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false, // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class SearchComponent implements OnInit {

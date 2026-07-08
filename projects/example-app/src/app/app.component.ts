@@ -1,7 +1,6 @@
 import {
   Component,
   ViewEncapsulation,
-  ChangeDetectionStrategy,
 } from "@angular/core";
 import { usage, component, ngModule, standaloneComponent } from "./code";
 
@@ -10,7 +9,6 @@ import { usage, component, ngModule, standaloneComponent } from "./code";
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.css"],
   encapsulation: ViewEncapsulation.Emulated,
-  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false, // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class AppComponent {

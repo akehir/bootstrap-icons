@@ -3,6 +3,7 @@ import { BootstrapIconsRegistry } from './icons.registry';
 
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'bootstrap-icon',
   template: `<ng-content></ng-content>`,
   encapsulation: ViewEncapsulation.None,

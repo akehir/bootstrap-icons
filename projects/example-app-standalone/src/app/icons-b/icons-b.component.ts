@@ -2,7 +2,6 @@ import {
   Component,
   ViewEncapsulation,
   inject,
-  ChangeDetectionStrategy,
 } from "@angular/core";
 import {
   BootstrapIconComponent,
@@ -79,7 +78,6 @@ import {
   templateUrl: "./icons-b.component.html",
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [BootstrapIconComponent],
 })
 export class IconsBComponent {

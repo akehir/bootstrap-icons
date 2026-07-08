@@ -1,8 +1,12 @@
-import { Component, ViewEncapsulation, inject } from '@angular/core';
-import { BootstrapIconsRegistry, } from '@triangular/bootstrap-icons';
+import {
+  Component,
+  ViewEncapsulation,
+  inject,
+  ChangeDetectionStrategy,
+} from "@angular/core";
+import { BootstrapIconsRegistry } from "@triangular/bootstrap-icons";
 
 import {
-
   bootstrapIconTable,
   bootstrapIconTabletLandscape,
   bootstrapIconTablet,
@@ -41,20 +45,20 @@ import {
   bootstrapIconTypeStrikethrough,
   bootstrapIconTypeUnderline,
   bootstrapIconType,
-} from '@triangular/bootstrap-icons/icons';
+} from "@triangular/bootstrap-icons/icons";
 
 @Component({
-  selector: 'app-icons-t',
-  templateUrl: './icons-t.component.html',
+  selector: "app-icons-t",
+  templateUrl: "./icons-t.component.html",
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
-  standalone: false // eslint-disable-line @angular-eslint/prefer-standalone
+  changeDetection: ChangeDetectionStrategy.Eager,
+  standalone: false, // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class IconsTComponent {
   private registry = inject(BootstrapIconsRegistry);
 
   icons = [
-
     bootstrapIconTable,
     bootstrapIconTabletLandscape,
     bootstrapIconTablet,
@@ -100,5 +104,4 @@ export class IconsTComponent {
 
     registry.registerIcons(this.icons);
   }
-
 }

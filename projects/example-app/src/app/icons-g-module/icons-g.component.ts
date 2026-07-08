@@ -1,8 +1,12 @@
-import { Component, ViewEncapsulation, inject } from '@angular/core';
-import { BootstrapIconsRegistry, } from '@triangular/bootstrap-icons';
+import {
+  Component,
+  ViewEncapsulation,
+  inject,
+  ChangeDetectionStrategy,
+} from "@angular/core";
+import { BootstrapIconsRegistry } from "@triangular/bootstrap-icons";
 
 import {
-
   bootstrapIconGearFill,
   bootstrapIconGearWideConnected,
   bootstrapIconGearWide,
@@ -24,20 +28,20 @@ import {
   bootstrapIconGrid3X3,
   bootstrapIconGridFill,
   bootstrapIconGrid,
-} from '@triangular/bootstrap-icons/icons';
+} from "@triangular/bootstrap-icons/icons";
 
 @Component({
-  selector: 'app-icons-g',
-  templateUrl: './icons-g.component.html',
+  selector: "app-icons-g",
+  templateUrl: "./icons-g.component.html",
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
-  standalone: false // eslint-disable-line @angular-eslint/prefer-standalone
+  changeDetection: ChangeDetectionStrategy.Eager,
+  standalone: false, // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class IconsGComponent {
   private registry = inject(BootstrapIconsRegistry);
 
   icons = [
-
     bootstrapIconGearFill,
     bootstrapIconGearWideConnected,
     bootstrapIconGearWide,
@@ -66,5 +70,4 @@ export class IconsGComponent {
 
     registry.registerIcons(this.icons);
   }
-
 }

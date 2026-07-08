@@ -1,5 +1,13 @@
-import { Component, ViewEncapsulation, inject } from '@angular/core';
-import {BootstrapIconComponent, BootstrapIconsRegistry,} from '@triangular/bootstrap-icons';
+import {
+  Component,
+  ViewEncapsulation,
+  inject,
+  ChangeDetectionStrategy,
+} from "@angular/core";
+import {
+  BootstrapIconComponent,
+  BootstrapIconsRegistry,
+} from "@triangular/bootstrap-icons";
 
 import {
   bootstrapIconAlarmFill,
@@ -46,17 +54,15 @@ import {
   bootstrapIconAt,
   bootstrapIconAwardFill,
   bootstrapIconAward,
-} from '@triangular/bootstrap-icons/icons';
-
+} from "@triangular/bootstrap-icons/icons";
 
 @Component({
-    selector: 'app-icons-a',
-    templateUrl: './icons-a.component.html',
-    styleUrls: [],
-    encapsulation: ViewEncapsulation.None,
-    imports: [
-    BootstrapIconComponent
-]
+  selector: "app-icons-a",
+  templateUrl: "./icons-a.component.html",
+  styleUrls: [],
+  encapsulation: ViewEncapsulation.None,
+  changeDetection: ChangeDetectionStrategy.Eager,
+  imports: [BootstrapIconComponent],
 })
 export class IconsAComponent {
   private registry = inject(BootstrapIconsRegistry);
@@ -113,5 +119,4 @@ export class IconsAComponent {
 
     registry.registerIcons(this.icons);
   }
-
 }

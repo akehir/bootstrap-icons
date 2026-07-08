@@ -1,5 +1,9 @@
-import { Component, ViewEncapsulation, inject } from '@angular/core';
-import { BootstrapIconsRegistry, } from '@triangular/bootstrap-icons';
+import {
+  Component,
+  ViewEncapsulation,
+  inject,
+} from "@angular/core";
+import { BootstrapIconsRegistry } from "@triangular/bootstrap-icons";
 
 import {
   bootstrapIconQuestionCircleFill,
@@ -11,14 +15,14 @@ import {
   bootstrapIconQuestionSquareFill,
   bootstrapIconQuestionSquare,
   bootstrapIconQuestion,
-} from '@triangular/bootstrap-icons/icons';
+} from "@triangular/bootstrap-icons/icons";
 
 @Component({
-  selector: 'app-icons-q',
-  templateUrl: './icons-q.component.html',
+  selector: "app-icons-q",
+  templateUrl: "./icons-q.component.html",
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
-  standalone: false // eslint-disable-line @angular-eslint/prefer-standalone
+  standalone: false, // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class IconsQComponent {
   private registry = inject(BootstrapIconsRegistry);
@@ -40,5 +44,4 @@ export class IconsQComponent {
 
     registry.registerIcons(this.icons);
   }
-
 }

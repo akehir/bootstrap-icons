@@ -1,8 +1,11 @@
-import { Component, ViewEncapsulation, inject } from '@angular/core';
-import { BootstrapIconsRegistry, } from '@triangular/bootstrap-icons';
+import {
+  Component,
+  ViewEncapsulation,
+  inject,
+} from "@angular/core";
+import { BootstrapIconsRegistry } from "@triangular/bootstrap-icons";
 
 import {
-
   bootstrapIconScrewdriver,
   bootstrapIconSearch,
   bootstrapIconServer,
@@ -42,20 +45,19 @@ import {
   bootstrapIconStopwatch,
   bootstrapIconSubtract,
   bootstrapIconSun,
-} from '@triangular/bootstrap-icons/icons';
+} from "@triangular/bootstrap-icons/icons";
 
 @Component({
-  selector: 'app-icons-s',
-  templateUrl: './icons-s.component.html',
+  selector: "app-icons-s",
+  templateUrl: "./icons-s.component.html",
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
-  standalone: false // eslint-disable-line @angular-eslint/prefer-standalone
+  standalone: false, // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class IconsSComponent {
   private registry = inject(BootstrapIconsRegistry);
 
   icons = [
-
     bootstrapIconScrewdriver,
     bootstrapIconSearch,
     bootstrapIconServer,
@@ -102,5 +104,4 @@ export class IconsSComponent {
 
     registry.registerIcons(this.icons);
   }
-
 }

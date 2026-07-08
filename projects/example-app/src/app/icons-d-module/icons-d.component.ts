@@ -1,5 +1,9 @@
-import { Component, ViewEncapsulation, inject } from '@angular/core';
-import { BootstrapIconsRegistry, } from '@triangular/bootstrap-icons';
+import {
+  Component,
+  ViewEncapsulation,
+  inject,
+} from "@angular/core";
+import { BootstrapIconsRegistry } from "@triangular/bootstrap-icons";
 
 import {
   bootstrapIconDashCircleFill,
@@ -17,14 +21,14 @@ import {
   bootstrapIconDropletFill,
   bootstrapIconDropletHalf,
   bootstrapIconDroplet,
-} from '@triangular/bootstrap-icons/icons';
+} from "@triangular/bootstrap-icons/icons";
 
 @Component({
-  selector: 'app-icons-d',
-  templateUrl: './icons-d.component.html',
+  selector: "app-icons-d",
+  templateUrl: "./icons-d.component.html",
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
-  standalone: false // eslint-disable-line @angular-eslint/prefer-standalone
+  standalone: false, // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class IconsDComponent {
   private registry = inject(BootstrapIconsRegistry);
@@ -52,5 +56,4 @@ export class IconsDComponent {
 
     registry.registerIcons(this.icons);
   }
-
 }

@@ -1,7 +1,6 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "esModuleInterop": true,
     "sourceMap": true,
@@ -16,10 +15,10 @@
     ],
     "paths": {
       "@triangular/bootstrap-icons": [
-        "dist/bootstrap-icons"
+        "./dist/bootstrap-icons"
       ],
       "@triangular/bootstrap-icons/*": [
-        "dist/bootstrap-icons/*"
+        "./dist/bootstrap-icons/*"
       ]
     },
     "useDefineForClassFields": false

@@ -21,7 +21,7 @@
     "test:example:docker": "ng test example-app --no-watch --progress=false --code-coverage --browsers ChromeDocker",
     "icons": "svg-to-ts-files -s /*.svg -o -f icons",
     "lint": "prettier --check \"**/*.{ts,js,html,scss,json,md}\" && ng lint",
-    "lint:fix": "prettier --write \"**/*.{ts,js,html,scss,json,md}\" && ng lint akehir --fix",
+    "lint:fix": "prettier --write \"**/*.{ts,js,html,scss,json,md}\" && ng lint --fix",
     "e2e": "ng e2e"
   },
   "private": true,

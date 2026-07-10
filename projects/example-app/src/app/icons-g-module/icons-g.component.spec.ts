@@ -9,12 +9,9 @@ describe('IconsGComponent', () => {
 
   beforeEach(() =>
     TestBed.configureTestingModule({
-      declarations: [ IconsGComponent ],
-      imports: [
-        BootstrapIconsModule,
-      ]
-    })
-    .compileComponents()
+      declarations: [IconsGComponent],
+      imports: [BootstrapIconsModule],
+    }).compileComponents()
   );
 
   beforeEach(() => {

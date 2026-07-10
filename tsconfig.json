@@ -10,16 +10,10 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "ES2022",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
+    "typeRoots": ["node_modules/@types"],
     "paths": {
-      "@triangular/bootstrap-icons": [
-        "./dist/bootstrap-icons"
-      ],
-      "@triangular/bootstrap-icons/*": [
-        "./dist/bootstrap-icons/*"
-      ]
+      "@triangular/bootstrap-icons": ["./dist/bootstrap-icons"],
+      "@triangular/bootstrap-icons/*": ["./dist/bootstrap-icons/*"]
     },
     "useDefineForClassFields": false
   }

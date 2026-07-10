@@ -1,6 +1,13 @@
-import { ChangeDetectionStrategy, Component, ElementRef, Input, ViewEncapsulation, DOCUMENT, inject } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  Input,
+  ViewEncapsulation,
+  DOCUMENT,
+  inject,
+} from '@angular/core';
 import { BootstrapIconsRegistry } from './icons.registry';
-
 
 @Component({
   // eslint-disable-next-line @angular-eslint/component-selector
@@ -8,7 +15,7 @@ import { BootstrapIconsRegistry } from './icons.registry';
   template: `<ng-content></ng-content>`,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true
+  standalone: true,
 })
 export class BootstrapIconComponent {
   private element = inject(ElementRef);
@@ -34,7 +41,10 @@ export class BootstrapIconComponent {
     const div = this.document?.createElement('DIV');
     if (div instanceof HTMLElement) {
       div.innerHTML = svgContent;
-      return div.querySelector('svg') || this.document?.createElementNS('http://www.w3.org/2000/svg', 'path');
+      return (
+        div.querySelector('svg') ||
+        this.document?.createElementNS('http://www.w3.org/2000/svg', 'path')
+      );
     }
   }
 }

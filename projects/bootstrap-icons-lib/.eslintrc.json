@@ -1,14 +1,9 @@
 {
   "extends": "../../.eslintrc.json",
-  "ignorePatterns": [
-    "!**/*",
-    "*.d.ts"
-  ],
+  "ignorePatterns": ["!**/*", "*.d.ts"],
   "overrides": [
     {
-      "files": [
-        "*.ts"
-      ],
+      "files": ["*.ts"],
       "parserOptions": {
         "project": [
           "projects/bootstrap-icons-lib/tsconfig.lib.json",
@@ -40,17 +35,12 @@
             "accessibility": "explicit"
           }
         ],
-        "arrow-parens": [
-          "off",
-          "always"
-        ],
+        "arrow-parens": ["off", "always"],
         "import/order": "off"
       }
     },
     {
-      "files": [
-        "*.html"
-      ],
+      "files": ["*.html"],
       "rules": {}
     }
   ]

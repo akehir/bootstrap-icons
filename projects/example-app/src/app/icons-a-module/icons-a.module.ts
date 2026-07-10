@@ -4,16 +4,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { IconsAComponent } from './icons-a.component';
 import { BootstrapIconsModule } from '@triangular/bootstrap-icons';
 
-const routes: Routes = [
-  { path: '', component: IconsAComponent }
-];
+const routes: Routes = [{ path: '', component: IconsAComponent }];
 
 @NgModule({
   declarations: [IconsAComponent],
-  imports: [
-    CommonModule,
-    RouterModule.forChild(routes),
-    BootstrapIconsModule,
-  ]
+  imports: [CommonModule, RouterModule.forChild(routes), BootstrapIconsModule],
 })
-export class IconsAModule { }
+export class IconsAModule {}

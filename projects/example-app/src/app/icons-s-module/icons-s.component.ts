@@ -1,9 +1,5 @@
-import {
-  Component,
-  ViewEncapsulation,
-  inject,
-} from "@angular/core";
-import { BootstrapIconsRegistry } from "@triangular/bootstrap-icons";
+import { Component, ViewEncapsulation, inject } from '@angular/core';
+import { BootstrapIconsRegistry } from '@triangular/bootstrap-icons';
 
 import {
   bootstrapIconScrewdriver,
@@ -45,11 +41,11 @@ import {
   bootstrapIconStopwatch,
   bootstrapIconSubtract,
   bootstrapIconSun,
-} from "@triangular/bootstrap-icons/icons";
+} from '@triangular/bootstrap-icons/icons';
 
 @Component({
-  selector: "app-icons-s",
-  templateUrl: "./icons-s.component.html",
+  selector: 'app-icons-s',
+  templateUrl: './icons-s.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
   standalone: false, // eslint-disable-line @angular-eslint/prefer-standalone

@@ -9,12 +9,9 @@ describe('IconsTComponent', () => {
 
   beforeEach(() =>
     TestBed.configureTestingModule({
-      declarations: [ IconsTComponent ],
-      imports: [
-        BootstrapIconsModule,
-      ]
-    })
-    .compileComponents()
+      declarations: [IconsTComponent],
+      imports: [BootstrapIconsModule],
+    }).compileComponents()
   );
 
   beforeEach(() => {

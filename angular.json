@@ -65,9 +65,7 @@
               "projects/example-app/src/favicon.ico",
               "projects/example-app/src/assets"
             ],
-            "styles": [
-              "projects/example-app/src/styles.css"
-            ],
+            "styles": ["projects/example-app/src/styles.css"],
             "scripts": [],
             "extractLicenses": false,
             "sourceMap": true,
@@ -127,9 +125,7 @@
             "polyfills": [],
             "tsConfig": "projects/example-app/tsconfig.spec.json",
             "karmaConfig": "projects/example-app/karma.conf.js",
-            "styles": [
-              "projects/example-app/src/styles.css"
-            ],
+            "styles": ["projects/example-app/src/styles.css"],
             "scripts": [],
             "assets": [
               "projects/example-app/src/favicon.ico",
@@ -178,9 +174,7 @@
               "projects/example-app-standalone/src/favicon.ico",
               "projects/example-app-standalone/src/assets"
             ],
-            "styles": [
-              "projects/example-app-standalone/src/styles.css"
-            ],
+            "styles": ["projects/example-app-standalone/src/styles.css"],
             "scripts": [],
             "browser": "projects/example-app-standalone/src/main.ts"
           },
@@ -235,9 +229,7 @@
               "projects/example-app-standalone/src/favicon.ico",
               "projects/example-app-standalone/src/assets"
             ],
-            "styles": [
-              "projects/example-app-standalone/src/styles.css"
-            ],
+            "styles": ["projects/example-app-standalone/src/styles.css"],
             "scripts": [],
             "karmaConfig": "projects/example-app-standalone/karma.conf.js"
           }

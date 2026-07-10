@@ -6,17 +6,19 @@
     "@angular/core": "^22.0.0"
   },
   "homepage": "https://bootstrap-icons.akehir.com",
-  "license" : "MIT",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/akehir/bootstrap-icons"
   },
-  "bugs": { "url" : "https://github.com/akehir/bootstrap-icons/issues"
-  , "email" : "raphael@akehir.com"
+  "bugs": {
+    "url": "https://github.com/akehir/bootstrap-icons/issues",
+    "email": "raphael@akehir.com"
   },
-  "author": { "name" : "Raphael Ochsenbein"
-            , "email" : "raphael@akehir.com"
-            , "url" : "https://akehir.com/"
+  "author": {
+    "name": "Raphael Ochsenbein",
+    "email": "raphael@akehir.com",
+    "url": "https://akehir.com/"
   },
   "dependencies": {
     "tslib": "^2.0.0"

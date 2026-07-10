@@ -1,14 +1,10 @@
-import {
-  Component,
-  ViewEncapsulation,
-  inject,
-} from "@angular/core";
-import { BootstrapIconsRegistry } from "@triangular/bootstrap-icons";
-import { BootstrapIcon } from "@triangular/bootstrap-icons/icons";
+import { Component, ViewEncapsulation, inject } from '@angular/core';
+import { BootstrapIconsRegistry } from '@triangular/bootstrap-icons';
+import { BootstrapIcon } from '@triangular/bootstrap-icons/icons';
 
 @Component({
-  selector: "app-icons-y",
-  templateUrl: "./icons-y.component.html",
+  selector: 'app-icons-y',
+  templateUrl: './icons-y.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
   standalone: false, // eslint-disable-line @angular-eslint/prefer-standalone

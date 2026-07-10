@@ -8,10 +8,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 describe('AppComponent', () => {
   beforeEach(() =>
     TestBed.configureTestingModule({
-      declarations: [
-        AppComponent,
-        SearchComponent,
-      ],
+      declarations: [AppComponent, SearchComponent],
       imports: [
         FormsModule,
         ReactiveFormsModule,
@@ -37,6 +34,8 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Angular Bootstrap Lazy Loaded Icon Lib');
+    expect(compiled.querySelector('h1').textContent).toContain(
+      'Angular Bootstrap Lazy Loaded Icon Lib'
+    );
   });
 });

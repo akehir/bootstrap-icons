@@ -32,5 +32,5 @@ module.exports = {
     'sortAttrs',
     'removeDimensions',
     'prefixIds',
-  ]
-}
+  ],
+};

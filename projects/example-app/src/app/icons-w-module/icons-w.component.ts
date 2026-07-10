@@ -1,9 +1,5 @@
-import {
-  Component,
-  ViewEncapsulation,
-  inject,
-} from "@angular/core";
-import { BootstrapIconsRegistry } from "@triangular/bootstrap-icons";
+import { Component, ViewEncapsulation, inject } from '@angular/core';
+import { BootstrapIconsRegistry } from '@triangular/bootstrap-icons';
 
 import {
   bootstrapIconWallet,
@@ -11,11 +7,11 @@ import {
   bootstrapIconWifi,
   bootstrapIconWindow,
   bootstrapIconWrench,
-} from "@triangular/bootstrap-icons/icons";
+} from '@triangular/bootstrap-icons/icons';
 
 @Component({
-  selector: "app-icons-w",
-  templateUrl: "./icons-w.component.html",
+  selector: 'app-icons-w',
+  templateUrl: './icons-w.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
   standalone: false, // eslint-disable-line @angular-eslint/prefer-standalone

@@ -5,15 +5,13 @@ import { BootstrapIconsRegistry } from './icons.registry';
 @NgModule({
   declarations: [],
   imports: [BootstrapIconComponent],
-  exports: [BootstrapIconComponent]
+  exports: [BootstrapIconComponent],
 })
 export class BootstrapIconsModule {
   static forRoot(): ModuleWithProviders<BootstrapIconsModule> {
     return {
       ngModule: BootstrapIconsModule,
-      providers: [
-        BootstrapIconsRegistry,
-      ],
+      providers: [BootstrapIconsRegistry],
     };
   }
 }

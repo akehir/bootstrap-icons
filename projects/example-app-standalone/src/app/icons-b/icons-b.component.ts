@@ -1,12 +1,8 @@
-import {
-  Component,
-  ViewEncapsulation,
-  inject,
-} from "@angular/core";
+import { Component, ViewEncapsulation, inject } from '@angular/core';
 import {
   BootstrapIconComponent,
   BootstrapIconsRegistry,
-} from "@triangular/bootstrap-icons";
+} from '@triangular/bootstrap-icons';
 
 import {
   bootstrapIconBackspaceFill,
@@ -71,11 +67,11 @@ import {
   bootstrapIconBucket,
   bootstrapIconBuilding,
   bootstrapIconBullseye,
-} from "@triangular/bootstrap-icons/icons";
+} from '@triangular/bootstrap-icons/icons';
 
 @Component({
-  selector: "app-icons-b",
-  templateUrl: "./icons-b.component.html",
+  selector: 'app-icons-b',
+  templateUrl: './icons-b.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
   imports: [BootstrapIconComponent],

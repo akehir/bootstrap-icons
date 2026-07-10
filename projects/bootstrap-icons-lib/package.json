@@ -1,6 +1,6 @@
 {
   "name": "@triangular/bootstrap-icons",
-  "version": "22.0.0",
+  "version": "22.0.1",
   "peerDependencies": {
     "@angular/common": "^22.0.0",
     "@angular/core": "^22.0.0"
@@ -23,7 +23,7 @@
   },
   "exports": {
     "./icons": {
-      "types": "./index.d.ts",
+      "types": "./icons/index.d.ts",
       "esm2020": "./icons/index.mjs",
       "esm": "./icons/index.mjs",
       "default": "./icons/index.mjs"

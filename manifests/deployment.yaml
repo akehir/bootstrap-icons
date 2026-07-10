@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: bootstrap-icons-example-app
-          image: registry.akehir.com:443/triangular/bootstrap-icons/bootstrap-icons-example-app:develop-2de52102-1783723834 # {"$imagepolicy": "triangular:bootstrap-icons-example-app-image-policy"}
+          image: registry.akehir.com:443/triangular/bootstrap-icons/bootstrap-icons-example-app:develop-cd7257e4-1783726154 # {"$imagepolicy": "triangular:bootstrap-icons-example-app-image-policy"}
           imagePullPolicy: Always
           ports:
             - containerPort: 8811

@@ -1,4 +1,4 @@
-FROM nginx:mainline-alpine-slim
+FROM nginx:1.30-alpine-slim
 
 RUN apk upgrade --no-cache
 

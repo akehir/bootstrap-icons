@@ -1,4 +1,6 @@
-FROM registry.akehir.com/infra/alpine-nginx/alpine-nginx
+FROM nginx:mainline-alpine-slim
+
+RUN apk upgrade --no-cache
 
 WORKDIR /app
 

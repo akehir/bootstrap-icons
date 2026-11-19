@@ -1,4 +1,4 @@
-FROM nginx:mainline-alpine-slim
+FROM registry.akehir.com/infra/alpine-nginx/alpine-nginx
 
 WORKDIR /app
 

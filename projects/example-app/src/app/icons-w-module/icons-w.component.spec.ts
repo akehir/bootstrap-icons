@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { IconsWComponent } from './icons-w.component';
 import { BootstrapIconsModule } from '@triangular/bootstrap-icons';
 
-describe('IconsDComponent', () => {
+describe('IconsWComponent', () => {
   let component: IconsWComponent;
   let fixture: ComponentFixture<IconsWComponent>;
 

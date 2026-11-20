@@ -18,7 +18,7 @@ build:
   script:
     - npm run lint
     - npm run build:lib
-    - npm run test:docker
+    - npm run test
     - npm run build
   artifacts:
     paths:

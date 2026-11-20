@@ -2,12 +2,13 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "../../out-tsc/spec",
-    "types": ["jasmine", "node"]
+    "types": ["jest", "node"],
+    "module": "esnext",
+    "moduleResolution": "bundler"
   },
-  "files": ["src/test.ts"],
+  "files": ["src/setup-jest.ts"],
   "include": ["**/*.spec.ts", "**/*.d.ts"],
   "angularCompilerOptions": {
-    "compilationMode": "partial",
     "extendedDiagnostics": {
       "checks": {
         "nullishCoalescingNotNullable": "suppress",
